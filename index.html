@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,7 +16,31 @@
   </style>
 </head>
 <body>
-
+  <main>
+    <div class="container">
+      <div class="cards">
+        <div class="cardback">
+          <img src="./images/bg-card-back.png" alt="">
+        </div>
+        <div class="cardfront">
+          <img src="./images/bg-card-front.png" alt="">
+        </div>
+      </div>
+      <div class="form">
+        <form autocomplete="on">
+          <p><label for="card-nome">Nome do titular: </label>
+            <input type="text" name="card-nome" id="card-nome"></p>
+          <p><label for="card-numero">Número do cartão: </label>
+            <input type="number" name="card-numero" id="card-numero"></p>
+          <p><label for="card-mes">Validade: </label>
+            <input type="number" name="card-mes" id="card-mes">
+            <input type="number" name="card-ano" id="card-ano"></p>
+          <p><label for="card-CVC">CVC: </label>
+            <input type="number" name="card-CVC" id="card-CVC"></p>
+          <p><input type="submit" value="Confirmar"></p>
+        </form>
+      </div>
+    </div>
   0000 0000 0000 0000
   Jane Appleseed
   00/00
@@ -36,7 +61,7 @@
   e.g. 123
 
   Confirm
-
+</main>
   <!-- Completed state start -->
 
   Thank you!

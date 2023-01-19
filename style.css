@@ -1,0 +1,9 @@
+.container{
+  border: 2px red solid;
+}
+
+.cards{
+  background-image: url(./images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
