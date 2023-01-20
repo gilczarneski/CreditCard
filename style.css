@@ -1,9 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root{
+  font-size: 62.5%;
+  --spaceGrotesk: 'Space Grotesk', sans-serif;
+  /*Cores primárias
+
+  - Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+  - Red (input errors): hsl(0, 100%, 66%)
+  */
+
+  /* Cores secundárias */
+  --branco: #ffffff;
+  --violeta_acinzentado_claro: #dedddf;
+  --violeta_acizentado_normal: #8e8593;
+  --violeta_acizentado_escuro: #21092f;
+}
+
+body{
+  font-size: 1.8rem;
+  font-family: var(--spaceGrotesk);
+}
+
+main{
+  width: 30rem;
+}
+
 .container{
+  width: 37.5rem;
   border: 2px red solid;
+  position: relative;
 }
 
 .cards{
   background-image: url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
 }
+
+.cardimage{
+  width: 30rem;
+}
+
+.cardback{
+  position: absolute;
+  top:4rem;
+  right: 2rem;
+}
+
+.cardfront{
+  position: absolute;
+  top:13rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.form{
+  text-transform: uppercase;
+  color: var(--violeta_acizentado_escuro);
+}
+
+.card-validade{
+  display: inline-block;
+}
+
+.card-mes, .card-ano{
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-CVC-input{
+  width: 3rem;
+  display: inline;
+}
+/*
+- Mobile: 375px
+- Desktop: 1440px
