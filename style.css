@@ -32,6 +32,7 @@ main{
 }
 
 .cards{
+  height: 30rem;
   background-image: url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-size: auto;
@@ -39,6 +40,13 @@ main{
 
 .cardimage{
   width: 30rem;
+}
+
+.cardlogo{
+  position: absolute;
+  top:15.5rem;
+  left: 3.5rem;
+  z-index: 2;
 }
 
 .cardback{
@@ -49,14 +57,20 @@ main{
 
 .cardfront{
   position: absolute;
-  top:13rem;
+  top:13.5rem;
   left: 2rem;
   z-index: 1;
 }
 
-.form{
+.dados{
   text-transform: uppercase;
+  font-weight: 500;
   color: var(--violeta_acizentado_escuro);
+  padding: 2rem;
+}
+
+.dados-input{
+  margin-bottom: 2rem;
 }
 
 .card-validade{
@@ -64,13 +78,35 @@ main{
 }
 
 .card-mes, .card-ano{
-  width: 2rem;
+  width: 2.5rem;
   height: 2rem;
+}
+
+.card-CVC{
+  display: inline;
 }
 
 .card-CVC-input{
   width: 3rem;
   display: inline;
+}
+
+.divbtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  width: 30rem;
+  height: 5rem;
+  background-color: var(--violeta_acizentado_escuro);
+  border-radius: 1rem;
+  color: var(--violeta_acinzentado_claro);
+  font-family: var(--spaceGrotesk);
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 /*
 - Mobile: 375px
